@@ -241,22 +241,24 @@ nav h1 {
         flex-direction: column;
         text-align: center;
         overflow-y: hidden;
+        overflow-x: hidden;
         
     }
     .content .text h3 {
         font-size: 5vw;
         font-weight: 800;
+        margin-bottom: 2vh;
     }  
     .content .text p {
         width: 80%;
-        font-size: 3vw;
+        font-size: 4vw;
 
     } 
-    .content .image
+    .content image
     {
         position: absolute;
-        height: 10vh;
-        width: 10vh;
+        height: auto;
+        width: auto;
         margin-top: 10vh;
     }
 }
