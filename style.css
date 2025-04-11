@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nova+Square&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 nav {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     height: 8vh;
     display: flex;
@@ -46,6 +46,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-left: 10vw;
 }
 
 nav h1 {
@@ -134,13 +135,12 @@ nav h1 {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 1.4vw;
     overflow-y: hidden;
 
 }
 
 .content .text {
-    margin-top: 2vw;
+    margin-top: 1vw;
     width: 100%;
     height: 100%;
     display: flex;
@@ -165,22 +165,22 @@ nav h1 {
     font-size: 3vw;
     color: #2D2D2D;
     text-shadow: 0 0 1.4vw rgba(255, 205, 96, 0.4);
-    margin-bottom: 3vh;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 50;
     font-style: normal;
+    text-align: center;
+    margin-bottom: 1vw;
 }
 
 .content .text p {
-    width: 70%;
-    font-family: 'Nova Square', cursive;
-    font-size: 1.5vw;
+    width: 50%;
+    font-size: 1.2vw;
+    line-height: 3.3vh;
     color: #2D2D2D;
     text-shadow: 0 0 1.4vw rgba(255, 205, 96, 0.4);
-    font-family: "Playfair Display", serif;
+    font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 50;
     font-style: normal;
 }
 
@@ -194,4 +194,58 @@ nav h1 {
 .content img:hover {
     filter: blur(0.1vw);
     transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+    nav .nav1 {
+        display: none;
+    }
+
+
+    .icon i {
+        display: block;
+        font-size: 5vw;
+        color: #2D2D2D;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .button {
+        display: none !important;
+        cursor: pointer;
+    
+    }
+
+    .content .text h1 {
+        font-size: 18vw;
+    }
+
+    nav {
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        text-decoration: none;
+    }
+    .content
+    {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        overflow-y: hidden;
+        
+    }
+    .content .text h3 {
+        font-size: 5vw;
+        font-weight: 800;
+    }  
+    .content .text p {
+        width: 80%;
+        font-size: 3vw;
+
+    } 
 }
