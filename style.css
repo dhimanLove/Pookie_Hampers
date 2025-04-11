@@ -195,12 +195,15 @@ nav h1 {
     filter: blur(0.1vw);
     transition: all 0.3s ease-in-out;
 }
-@media (min-width: 768px) {
+@media (max-width: 1080px)
+{
+    nav h1
+    {
+        font-size: 5vw;
+    }
     nav .nav1 {
         display: none;
     }
-
-
     .icon i {
         display: block;
         font-size: 5vw;
@@ -232,6 +235,7 @@ nav h1 {
         width: 100%;
         height: 100vh;
         display: flex;
+        margin-top: 10vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -248,4 +252,11 @@ nav h1 {
         font-size: 3vw;
 
     } 
+    .content .image
+    {
+        position: absolute;
+        height: auto;
+        width: auto;
+        margin-top: 10vh;
+    }
 }
