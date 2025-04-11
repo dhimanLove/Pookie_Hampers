@@ -255,8 +255,8 @@ nav h1 {
     .content .image
     {
         position: absolute;
-        height: auto;
-        width: auto;
+        height: 10vh;
+        width: 10vh;
         margin-top: 10vh;
     }
 }
