@@ -20,7 +20,7 @@ body {
 }
 
 .main {
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -80,6 +80,54 @@ nav h1 {
     display: none;
 }
 
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10vw;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #2c2c2c;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+.menu ul li a::selection
+{
+    background-color: #2D2D2D;
+    color: #FCF9F3;
+}
 .button {
     cursor: pointer;
     position: relative;
@@ -195,7 +243,7 @@ nav h1 {
     filter: blur(0.1vw);
     transition: all 0.3s ease-in-out;
 }
-@media (max-width: 1080px)
+@media (max-width: 768px)
 {
     nav h1
     {
@@ -250,15 +298,16 @@ nav h1 {
         margin-bottom: 2vh;
     }  
     .content .text p {
-        width: 80%;
+        width: 90%;
         font-size: 4vw;
 
     } 
-    .content image
+    .content img
     {
+        height: 30vw;
+        width: 30vw;
         position: absolute;
-        height: auto;
-        width: auto;
-        margin-top: 10vh;
+        top: 60%;
+        margin: auto;
     }
 }
