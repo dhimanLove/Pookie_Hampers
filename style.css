@@ -1,11 +1,197 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nova+Square&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #2D2D2D;
+    box-sizing: border-box;
 }
-html,body{
-  height:100%;
-  width:100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #333;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #FCF9F3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.main::selection {
+    background-color: #2D2D2D;
+    color: #FCF9F3;
+}
+
+nav {
+    width: 85%;
+    margin: 0 auto;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.4vw;
+    text-decoration: none;
+    border-bottom: #2D2D2D solid 0.1vw;
+}
+
+.nav1 {
+    color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav h1 {
+    text-shadow: 0 0 1.4vw rgba(193, 163, 98, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: #2D2D2D;
+    font-size: 1vw;
+    font-weight: 600;
+    margin: 0 0.7vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav1 a:hover {
+    color: #FCF9F3;
+    background-color: #2D2D2D;
+    padding: 0.5vh 1vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 1.4vw rgba(193, 163, 98, 0.4);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon i {
+    display: none;
+}
+
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 0.4vw 0.7vw;
+    font-size: 1vw;
+    color: #2D2D2D;
+    border: 0.14vw solid #2D2D2D;
+    border-radius: 2.4vw;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #2D2D2D;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover::before {
+    scale: 3;
+}
+
+.button:hover {
+    color: #FCF9F3;
+    scale: 1;
+    box-shadow: 0 0 1.4vw rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+    scale: 1;
+}
+
+.button:active::before {
+    scale: 0;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1.4vw;
+    overflow-y: hidden;
+
+}
+
+.content .text {
+    margin-top: 2vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .text h1 {
+    font-family: 'Nova Square', cursive;
+    font-size: 11vw;
+    color: #2D2D2D;
+    text-shadow: 0 0 1.4vw rgba(255, 205, 96, 0.4);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.content .text h3 {
+    font-family: 'Nova Square', cursive;
+    font-size: 3vw;
+    color: #2D2D2D;
+    text-shadow: 0 0 1.4vw rgba(255, 205, 96, 0.4);
+    margin-bottom: 3vh;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.content .text p {
+    width: 70%;
+    font-family: 'Nova Square', cursive;
+    font-size: 1.5vw;
+    color: #2D2D2D;
+    text-shadow: 0 0 1.4vw rgba(255, 205, 96, 0.4);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.content .image image {
+    position: absolute;
+    height: auto;
+    width: auto;
+
+}
+
+.content img:hover {
+    filter: blur(0.1vw);
+    transition: all 0.3s ease-in-out;
 }
