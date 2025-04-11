@@ -15,3 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Error: Element with class 'icon' or ID 'myMenu' not found.");
     }
 });
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true,
+    lerp:0.05,
+});

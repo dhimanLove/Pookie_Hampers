@@ -50,14 +50,18 @@ nav {
 }
 
 nav h1 {
+    font-family: sans-serif;
+    font-size: 1.2vw;
+    color: #303030; 
+    font-weight: 200;
     text-shadow: 0 0 1.4vw rgba(193, 163, 98, 0.4);
     transition: all 0.3s ease-in-out;
-}
+  }
 
 .nav1 a {
     text-decoration: none;
     color: #2D2D2D;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 600;
     margin: 0 0.7vw;
     transition: all 0.3s ease-in-out;
