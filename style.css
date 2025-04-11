@@ -85,8 +85,8 @@ nav h1 {
     position: absolute;
     top: 50px;
     right: 10vw;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    background-color: #FCF9F3;
+    border: 1px solid #2D2D2D;  
     padding: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 10;
