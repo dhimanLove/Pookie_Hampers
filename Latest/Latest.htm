@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latest Products</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Assets/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="cursor"></div>
     <div class="main" data-scroll-container>
         <nav>
             <h1>Pookie-Hampers</h1>
@@ -30,50 +31,51 @@
         <div class="latest">
             <div class="card">
                 <img src="https://i.pinimg.com/736x/bd/ed/e4/bdede4aad225e49da762371b67f31574.jpg" alt="Flower Bouquet">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
+
             <div class="card">
                 <img src="https://i.pinimg.com/736x/95/43/fa/9543fa719644e362df9884c322779625.jpg"
                     alt="Chocolate Hamper">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
                 <img src="https://i.pinimg.com/736x/c0/5e/63/c05e632441b08e481cf91ffbbad03d9b.jpg"
                     alt="Soft Toy Hampers">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
                 <img src="https://i.pinimg.com/736x/36/4b/4a/364b4a17d4544d8f5eed738a50fc98d3.jpg"
                     alt="Jewellery Hampers">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
                 <img src="https://i.pinimg.com/736x/db/7a/d9/db7ad96cd62cd663aeb93298f129d45f.jpg" alt="Cake Hampers">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
                 <img src="https://i.pinimg.com/736x/31/40/ac/3140ac6b18a8dcad84d0c941dab9b1db.jpg" alt="Makeup Hampers">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
                 <img src="https://i.pinimg.com/736x/7f/75/2d/7f752d9892a7b74a407ca8383496a886.jpg" alt="Photo Frames">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
                 <img src="https://i.pinimg.com/736x/83/07/35/83073502f6afeaee3da023f5115ce9d4.jpg" alt="Period Hampers">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
                 <img src="https://i.pinimg.com/736x/9f/24/e7/9f24e7516d8a17bb48027ac2fe62889b.jpg"
                     alt="Customized T-Shirts">
-                <button class="card-button">More info</button>
+                <button onclick="openInstaDM()" class="card-button">More info</button>
             </div>
 
             <div class="card">
@@ -86,6 +88,7 @@
                 </form>
             </div>
         </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"

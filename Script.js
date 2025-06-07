@@ -21,3 +21,13 @@ const scroll = new LocomotiveScroll({
     smooth: true,
     lerp:0.05,
 });
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', function(e) {
+  gsap.to(cursor, {
+    duration: 0.2,
+    x: e.clientX,
+    y: e.clientY,
+    ease: "power2.out"
+  });
+});
